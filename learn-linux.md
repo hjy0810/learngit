@@ -1,42 +1,41 @@
 ## 了解Linux 
 
 ### command
+```shell
+cd ~          切换到当前用户的home路径
+cd -          切换到上次操作所在路径
+pwd           Print Working Directory 显示当前目录绝对路径 
+ls              
+ls -a         连同隐藏文件( 开头为 . 的文件) 一起列出来
+# 
+mkdir mydir
+touch file    创建一个名为 file 的文件
+touch a{1..10}.txt  一次创建10个文件
+# 
+cp        cp  1.txt  2.txt    复制文件
+cp -r     cp -r dir1 dir2 复制目录（-r 代表递归复制）
+#
+rmdir         删除空目录  
+rm            rm file1  删除 'file1' 文件  //删除只读 -f
+rm -r        rm -r mydir  删除mydir目录
+# 
+mv source destination   移动 文件/目录 到destination目录
+mv file1 file2          重命名 文件/目录
+#
+cat/nl      cat/nl [file-name]   正序显示 / 添加行号并正序显示
+file        file [file-name] ,查看文件类型
+#
+df          Disk free（空余硬盘） 查看磁盘容量 
+df -h       以更易读的方式展示
+#
+vimtutor  内置vim学习教程
+who am i/who mom likes    查看当前用户
 
-- cd ~          切换到当前用户的home路径
-- cd -          切换到上次操作所在路径
-- pwd           Print Working Directory 显示当前目录绝对路径 
-- ls              
-- ls -a         连同隐藏文件( 开头为 . 的文件) 一起列出来
-
-- mkdir mydir
-- touch file    创建一个名为 file 的文件
-- touch a{1..10}.txt  一次创建10个文件
-
-- cp        cp  1.txt  2.txt    复制文件
-- cp -r     cp -r dir1 dir2 复制目录（-r 代表递归复制）
-
-- rmdir         删除空目录  
-- rm            rm file1  删除 'file1' 文件  //删除只读 -f
-- rm -r         rm -r mydir  删除mydir目录
-  
-- mv        mv source destination  移动 文件/目录 到destination目录
-- mv        mv file1 file2  重命名 文件/目录
-
-- cat/nl    正序显示 / 添加行号并正序显示
-
-- file      查看文件类型
-
-- df        Disk free（空余硬盘） 查看磁盘容量 
-- df -h     以更易读的方式展示
-
-- vimtutor  内置vim学习教程
-- who am i/who mom likes    查看当前用户
-
-- echo      输出文本
-- man  <command>    获取某个命令的说明和使用方式 ，按 q 键退出
-- env / export  查看所有已经定义过的环境变量
+echo      输出文本
+man  <command>    获取某个命令的说明和使用方式 ，按 q 键退出
+env / export  查看所有已经定义过的环境变量
 - echo $PATH    查看环境变量PATH
-
+```
 ### 环境变量
 按变量的生命周期可分为 永久的 和 临时的 两类变量
     - 永久的需要修改配置文件，使变量永久生效
